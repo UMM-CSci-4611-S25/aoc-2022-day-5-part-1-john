@@ -15,7 +15,7 @@ use std::{
     str::FromStr,
 };
 
-static INPUT_FILE: &str = "original_input.txt";
+static INPUT_FILE: &str = "input2.txt";
 
 const NUM_STACKS: usize = 9;
 
