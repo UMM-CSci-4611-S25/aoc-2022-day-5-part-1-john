@@ -410,7 +410,7 @@ mod tests {
             .expect("Failed to apply instruction");
 
         assert_eq!(new_stacks.stacks[0], vec!['A']);
-        assert_eq!(new_stacks.stacks[1], vec!['D', 'E', 'F', 'C', 'B']);
+        assert_eq!(new_stacks.stacks[1], vec!['D', 'E', 'F', 'B', 'C']);
     }
 
     // This essentially runs `main()` and checks that the results are correct for part 1.
@@ -440,6 +440,6 @@ mod tests {
             .tops_string()
             .expect("Tried to take the top of an empty stack");
 
-        assert_eq!("SBPQRSCDF", stack_tops);
+        assert_eq!("RGLVRCQSB", stack_tops);
     }
 }
